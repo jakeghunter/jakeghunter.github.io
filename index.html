@@ -69,6 +69,8 @@
 							<span class="sep">•</span>
 							<a href="#patents" class="scrolly">Patents</a>
 							<span class="sep">•</span>
+							<a href="#reviews" class="scrolly">Teaching</a>
+							<span class="sep">•</span>
 							<a href="#technical" class="scrolly">Technical Projects</a>
 							<span class="sep">•</span>
 							<a href="#interests" class="scrolly">Interests</a>
@@ -143,6 +145,41 @@
 							</article>
 						</div>
 					</section>	
+
+				
+				<!-- Teaching -->
+					<section id="reviews">
+						<h2>Teaching</h2>
+						<p>Toward the end of my PhD, Fall 2024 & 2025, I taught Thermodynamics I at Purdue University. I taught core mechanical engineering principles
+							including energy systems, thermodynamic cycles, and first/second law analysis to 200+ undergraduate engineering students. Below are reviews
+							from Rate My Professor:
+						</p>
+
+						<div class="review-slider">
+							<button class="review-arrow review-arrow-left" id="prevReview" aria-label="Previous review">
+								&#10094;
+							</button>
+
+							<div class="review-card">
+								<p class="review-text" id="reviewText"></p>
+								<p class="review-meta" id="reviewMeta"></p>
+							</div>
+
+							<button class="review-arrow review-arrow-right" id="nextReview" aria-label="Next review">
+								&#10095;
+							</button>
+						</div>
+
+						<div class="review-dots" id="reviewDots"></div>
+
+						<ul class="actions">
+							<li>
+								<a href="https://www.ratemyprofessors.com/professor/3028611" class="button" target="_blank" rel="noopener noreferrer">
+									View More Reviews
+								</a>
+							</li>
+						</ul>
+					</section>
 
 					<!-- Technical Projects -->
 					<section id="technical">
@@ -261,6 +298,68 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+					const reviews = [
+						{
+							text: "Excellent professor. Made the 7:30 AM class fun. He made an effort to know every student's name, and put in a lot of work to make review sessions for exams. He explained concepts very well.",
+							meta: "Thermodynamics Student Fall '25"
+						},
+						{
+							text: "Genuinely such an amazing professor! He cares so much for our success, makes an effort to remember student's names, and he makes the 7:30 am class actually go by so fast. He explains such hard concepts easily and I have surprisingly been enjoying thermo so far.",
+							meta: "Thermodynamics Student Fall '25"
+						},
+						{
+							text: "Professor Hunter was a great professor, he taught very well during lectures, engaged his students, and cared about teaching and helping everyone during class, and pretty much remembered everyone's name.",
+							meta: "Thermodynamics Student Fall '24"
+						},
+						{
+							text: "His in class review sessions were very helpful in preparing for the exams since he covered difficult topics and explained them in a new way.",
+							meta: "Thermodynamics Student Fall '24"
+						}
+					];
+
+					let currentReview = 0;
+
+					const reviewText = document.getElementById("reviewText");
+					const reviewMeta = document.getElementById("reviewMeta");
+					const prevButton = document.getElementById("prevReview");
+					const nextButton = document.getElementById("nextReview");
+					const reviewDots = document.getElementById("reviewDots");
+
+					function renderDots() {
+						reviewDots.innerHTML = "";
+						reviews.forEach((_, index) => {
+							const dot = document.createElement("span");
+							dot.className = "review-dot" + (index === currentReview ? " active" : "");
+							dot.setAttribute("aria-label", "Go to review " + (index + 1));
+							dot.addEventListener("click", function () {
+								currentReview = index;
+								renderReview();
+							});
+							reviewDots.appendChild(dot);
+						});
+					}
+
+					function renderReview() {
+						reviewText.textContent = '"' + reviews[currentReview].text + '"';
+						reviewMeta.textContent = reviews[currentReview].meta;
+						renderDots();
+					}
+
+					prevButton.addEventListener("click", function () {
+						currentReview = (currentReview - 1 + reviews.length) % reviews.length;
+						renderReview();
+					});
+
+					nextButton.addEventListener("click", function () {
+						currentReview = (currentReview + 1) % reviews.length;
+						renderReview();
+					});
+
+					renderReview();
+				});
+			</script>			
 
 	</body>
 </html>
