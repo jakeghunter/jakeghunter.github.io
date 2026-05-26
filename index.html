@@ -1,32 +1,18 @@
 <!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<!-- <head>
-		<title>Jake Hunter</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head> -->
 	<head>
 		<title>Jake Hunter</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-		<!-- Primary Meta -->
 		<meta name="description" content="Human Factors, Engineering Design, and HCI." />
 
-		<!-- Open Graph (controls iMessage, Slack, LinkedIn previews) -->
 		<meta property="og:title" content="Jake Hunter" />
 		<meta property="og:description" content="Human Factors, Engineering Design, and HCI." />
 		<meta property="og:image" content="https://jakeghunter.github.io/images/preview.png" />
 		<meta property="og:url" content="https://jakeghunter.github.io" />
 		<meta property="og:type" content="website" />
 
-		<!-- Twitter (also used by some platforms) -->
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:title" content="Jake Hunter">
 		<meta name="twitter:description" content="Human Factors, Engineering Design, and HCI.">
@@ -36,342 +22,793 @@
 	</head>
 	<body class="is-preload">
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<span class="image avatar"><img src="images/headshot.jpg" alt="Jake Hunter headshot" /></span>
-					<h1 class="sidebar-name"><strong>Jake Hunter</strong></h1>
-					<p class="sidebar-tagline">Human Factors &bull; Engineering Design &bull; HCI</p>
-					<p class="sidebar-affiliation">Mechanical Engineering &bull; Penn State University</p>
-
-					<ul class="icons sidebar-icons">
-						<li><a href="files/HunterJacob_CV_Apr2026.pdf" target="_blank" rel="noopener noreferrer" class="icon solid fa-file-alt"><span class="label">CV</span></a></li>
-						<li><a href="https://scholar.google.com/citations?user=2hmuZMAAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="icon solid fa-graduation-cap"><span class="label">Google Scholar</span></a></li>
-						<li><a href="https://www.linkedin.com/in/jakeghunter/" target="_blank" rel="noopener noreferrer" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="mailto:jgh5334@psu.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
+		<!-- ===================== PROJECT MODAL ===================== -->
+		<div id="project-modal" class="pmodal-overlay" role="dialog" aria-modal="true" aria-labelledby="pmodal-title">
+			<div class="pmodal-container">
+				<button class="pmodal-close" id="pmodal-close" aria-label="Close">&times;</button>
+				<div class="pmodal-header">
+					<div class="pmodal-tag">PROJECT BRIEF</div>
+					<h2 class="pmodal-title" id="pmodal-title"></h2>
+					<p class="pmodal-subtitle" id="pmodal-subtitle"></p>
 				</div>
-			</header>
+				<div class="pmodal-body" id="pmodal-body">
+					<!-- Steps injected here by JS -->
+				</div>
+			</div>
+		</div>
+		<!-- ========================================================= -->
+
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+				<span class="image avatar"><img src="images/headshot.jpg" alt="Jake Hunter headshot" /></span>
+				<h1 class="sidebar-name"><strong>Jake Hunter</strong></h1>
+				<p class="sidebar-tagline">Human Factors &bull; Engineering Design &bull; HCI</p>
+				<p class="sidebar-affiliation">Mechanical Engineering &bull; Penn State University</p>
+
+				<ul class="icons sidebar-icons">
+					<li><a href="files/HunterJacob_CV_Apr2026.pdf" target="_blank" rel="noopener noreferrer" class="icon solid fa-file-alt"><span class="label">CV</span></a></li>
+					<li><a href="https://scholar.google.com/citations?user=2hmuZMAAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="icon solid fa-graduation-cap"><span class="label">Google Scholar</span></a></li>
+					<li><a href="https://www.linkedin.com/in/jakeghunter/" target="_blank" rel="noopener noreferrer" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					<li><a href="mailto:jgh5334@psu.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+			</div>
+		</header>
 
 		<!-- Main -->
-			<div id="main">
+		<div id="main">
 
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-    					<h2>Jacob G. Hunter</h2>
-    					<p class="subtitle">Research Scholar, Penn State University</p>
-						</header>
-						<p>I am a Research Scholar in the <a href="https://sites.psu.edu/reidlab/" target="_blank" rel="noopener noreferrer">REID Lab</a> at Penn State, where I study how humans and AI collaborate in engineering design. My work focuses on understanding design fixation, decision-making, and exploration in complex design problems, with the goal of improving both creativity and performance in real-world settings.</p>
-						<p> Prior to joining Penn State, I earned a Ph.D. and M.S. in Mechanical Engineering from Purdue University and a B.S. in Mechanical Engineering from BYU.</p>
-						<p class="section-nav">
-							<a href="#two" class="scrolly">Research</a>
-							<span class="sep">•</span>
-							<a href="#patents" class="scrolly">Patents</a>
-							<span class="sep">•</span>
-							<a href="#reviews" class="scrolly">Teaching</a>
-							<span class="sep">•</span>
-							<a href="#technical" class="scrolly">Technical Projects</a>
-							<span class="sep">•</span>
-							<a href="#interests" class="scrolly">Interests</a>
-							<span class="sep">•</span>
-							<a href="#contact" class="scrolly">Contact</a>
-						</p>
-					</section>
+			<!-- One -->
+			<section id="one">
+				<header class="major">
+					<h2>Jacob G. Hunter</h2>
+					<p class="subtitle">Research Scholar, Penn State University</p>
+				</header>
+				<p>I am a Research Scholar in the <a href="https://sites.psu.edu/reidlab/" target="_blank" rel="noopener noreferrer">REID Lab</a> at Penn State, where I study how humans and AI collaborate in engineering design. My work focuses on understanding design fixation, decision-making, and exploration in complex design problems, with the goal of improving both creativity and performance in real-world settings.</p>
+				<p>Prior to joining Penn State, I earned a Ph.D. and M.S. in Mechanical Engineering from Purdue University and a B.S. in Mechanical Engineering from BYU.</p>
+				<p class="section-nav">
+					<a href="#two" class="scrolly">Research</a>
+					<span class="sep">•</span>
+					<a href="#patents" class="scrolly">Patents</a>
+					<span class="sep">•</span>
+					<a href="#reviews" class="scrolly">Teaching</a>
+					<span class="sep">•</span>
+					<a href="#technical" class="scrolly">Technical Projects</a>
+					<span class="sep">•</span>
+					<a href="#interests" class="scrolly">Interests</a>
+					<span class="sep">•</span>
+					<a href="#contact" class="scrolly">Contact</a>
+				</p>
+			</section>
 
-				<!-- Two -->
-					<section id="two">
-						<h2>Research</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/IMG_5051.jpg" class="image fit thumb">
-									<img src="images/IMG_5051.JPG" alt="Design fixation analysis" />
-								</a>
-								<h3>Correlating Brain Activation with Design Fixation</h3>
-								<p>
-								Measured brain activation of designers using functional near-infrared spectroscopy (fNIRS) while they completed a design task.
-								Correlating the brain activation with episodes of design fixation revealed the right frontopolar cortex as the strongest differentiator
-								between fixation and defixation episodes, with more activation during defixation. This work is in progress and will be submitted to Design Science.
-								</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/Figure_1_new_drones.png" class="image fit thumb">
-									<img src="images/Figure_1_new_drones.png" alt="Design fixation analysis" />
-								</a>
-								<h3>Quantifying Design Fixation in Constrained Tasks</h3>
-								<p>
-								Developed a methodology for objectively measuring design fixation using behavioral data,
-								enabling direct comparison of design strategies in computer-based environments. Findings are published in 
-								the Journal of Mechanical Design and are available <a href="https://asmedigitalcollection.asme.org/mechanicaldesign/article/doi/10.1115/1.4071923/1233053/A-Methodology-for-Objective-Design-Fixation" target="_blank" rel="noopener noreferrer">here</a>.
-								</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/drone_demo.png" class="image fit thumb">
-									<img src="images/drone_demo.png" alt="Person flying a drone simulation" />
-								</a>
-								<h3>Distraction-Aware Reachability Analysis of CPHS Systems using fNIRS</h3>
-								<p>
-								Studied drone pilots under focused and distracted conditions. Used functional near-infrared spectroscopy (fNIRS) to
-								determine which regions in the prefrontal cortex are most activated during a state of distraction. My colleague then used
-								these findings with a reachability model to predict future drone states. Preliminary findings are published
-								in the <a href="https://arc.aiaa.org/doi/abs/10.2514/6.2025-2250" target="_blank" rel="noopener noreferrer">SciTech 2025 Proceedings</a> and updated work is under review in the Journal of Aerospace Information Systems.
-								</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/sidewalk_mobility.jpg" class="image fit thumb">
-									<img src="images/sidewalk_mobility.jpg" alt="Sidewalk mobility experiment" />
-								</a>
-								<h3>Dual Mobility Study</h3>
-								<p>
-								Explored how people develop trust when using different automated vehicles, comparing a familiar automated car to a novel automated sidewalk mobility. Using immersive simulator rides and surveys, the results showed that trust grew similarly across both systems. 
-								Findings are published in Frontiers in Psychology and are available <a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1129583/full" target="_blank" rel="noopener noreferrer">here</a>.
-								</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/driving_sim.jpg" class="image fit thumb">
-									<img src="images/driving_sim.jpg" alt="Driving simulation experiment" />
-								</a>
-								<h3>The Interaction Gap</h3>
-								<p>
-								Examined how trust in partially automated vehicles changes when people experience gaps between uses, mimicking real-world shared mobility. 
-								Using a driving simulator with repeated sessions, the results showed that trust gained or lost during an initial interaction partially faded after a one-week gap, indicating that periods of non-use can erode both positive and negative trust impressions of automation.
-								Findings are published in the 66th HFES Annual Meeting Proceedings and are available <a href="https://journals.sagepub.com/doi/abs/10.1177/1071181322661311" target="_blank" rel="noopener noreferrer">here</a>.
-								</p>
-							</article>
-						</div>
-					</section>
+			<!-- Two — Research -->
+			<section id="two">
+				<h2>Research</h2>
+				<div class="row">
 
-
-				<!-- Patents -->
-					<section id="patents">
-						<h2>Patents</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/bloom.jpeg" class="image fit thumb">
-									<img src="images/bloom.jpeg" alt="Scope Wiper and Irrigation Cleaning System" />
-								</a>
-								<h3>Scope Wiper & Irrigation Cleaning System</h3>
-								<p>
-								Contributed to the design and development of an origami-inspired, laparoscope cleaning attachment. The patent was awarded in 2023 and is currently licensed to <a href="https://www.bloomsurgical.com/" target="_blank" rel="noopener noreferrer">Bloom Surgical</a>.
-								</p>
-							</article>
-						</div>
-					</section>	
-
-				
-				<!-- Teaching -->
-					<section id="reviews">
-						<h2>Teaching</h2>
-						<p>Toward the end of my PhD, Fall 2024 & 2025, I taught Thermodynamics I at Purdue University. I taught core mechanical engineering principles
-							including energy systems, thermodynamic cycles, and first/second law analysis to 200+ undergraduate engineering students. Below are reviews
-							from Rate My Professor:
-						</p>
-
-						<div class="review-slider">
-							<button class="review-arrow review-arrow-left" id="prevReview" aria-label="Previous review">
-								&#10094;
-							</button>
-
-							<div class="review-card">
-								<p class="review-text" id="reviewText"></p>
-								<p class="review-meta" id="reviewMeta"></p>
-							</div>
-
-							<button class="review-arrow review-arrow-right" id="nextReview" aria-label="Next review">
-								&#10095;
-							</button>
-						</div>
-
-						<div class="review-dots" id="reviewDots"></div>
-
-						<ul class="actions">
-							<li>
-								<a href="https://www.ratemyprofessors.com/professor/3028611" class="button" target="_blank" rel="noopener noreferrer">
-									View More Reviews
-								</a>
-							</li>
-						</ul>
-					</section>
-
-					<!-- Technical Projects -->
-					<section id="technical">
-						<h2>Technical Projects</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/cgan.jpg" class="image fit thumb">
-									<img src="images/cgan.jpg" alt="Generated MNIST dataset with CGAN" />
-								</a>
-								<h3>Conditional Generative Adversarial Network for MNIST Data Generation</h3>
-								<p>
-								Created a conditional generative adversarial network (CGAN) in Python using PyTorch to generate synthetic MNIST data for my Machine Learning class. I carried out a simple
-								experiment on Instagram where I asked people to guess which images were real and which were generated, and I fooled 24% of the respondents! This was a great introduction
-								to machine learning for me. If you are interested in reading my project paper, you can <a href="files/HunterJacob_ML_Project_ECE_50024.pdf" target="_blank" rel="noopener noreferrer">here</a>.
-								</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/IMG_4177.JPG" class="image fit thumb">
-									<img src="images/IMG_4177.JPG" alt="Custom Mongolian Yurt Floor" />
-								</a>
-								<h3>Custom Insulated Floor for Mongolian Yurts</h3>
-								<p>
-								Designed a modular, insulated flooring system for Mongolian yurts. I directed a multidisciplinary team of six through two stages of the product development process and then transitioned to leading the heat transfer modeling and experimentation work. 
-								The project was for my senior capstone project at BYU and sponsored by Deseret International Charities.
-								</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/shear_moment.png" class="image fit thumb">
-									<img src="images/shear_moment.png" alt="Matlab GUI for Shear and Moment Diagrams" />
-								</a>
-								<h3>Matlab GUI for Shear and Moment Diagrams</h3>
-								<p>
-								Designed a Matlab GUI to visualize shear and moment diagrams for point and distributed loads on simply-supported beams. This was for an undergrad coding project, so if you want to hear about it from a younger me you can see the video <a href="https://www.youtube.com/watch?v=sGlbA0-T_hg" target="_blank" rel="noopener noreferrer">here</a>.
-								</p>
-							</article>
-						</div>
-					</section>	
-
-					<!-- Interests -->
-					<section id="interests">
-						<h2>Interests</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/onewheel_purdue.jpg" class="image fit thumb">
-									<img src="images/onewheel_purdue.jpg" alt="Onewheel" />
-								</a>
-								<h3>Onewheel</h3>
-								<p>
-								I enjoy riding my Onewheel and getting out of the car! I have somewhere between 2,000 - 3,000 miles on my board. I like to fix things and can change the tire (it is quite the process).
-								</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/IMG_7153.jpg" class="image fit thumb">
-									<img src="images/IMG_7153.jpg" alt="Gameboy Advance SP Screen Replacement" />
-								</a>
-								<h3>Gameboy Advance SP Screen Replacement</h3>
-								<p>
-								I like to tinker with retro video games and have repaired or upgraded two Gameboy Advance SPs, one Nintendo Entertainment System (NES), and several gameboy cartridges. I bought a non-working Gamecube and am looking forward to fixing that next!
-								</p>
-							</article>
-					</section>
-
-
-				<!-- Contact -->
-					<section id="contact">
-						<h2>Get In Touch</h2>
+					<!-- WORKING EXAMPLE: fNIRS Design Fixation -->
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="#" class="image fit thumb learn-more-trigger" data-project="fnirs-fixation" onclick="return false;">
+							<img src="images/IMG_5051.JPG" alt="Design fixation analysis" />
+						</a>
+						<h3>Correlating Brain Activation with Design Fixation</h3>
 						<p>
-						<p>
-						I am actively seeking research and engineering roles in mechanical design, human–AI interaction, and/or human factors, with availability beginning in July 2026.
+						Measured brain activation of designers using functional near-infrared spectroscopy (fNIRS) while they completed a design task.
+						Correlating the brain activation with episodes of design fixation revealed the right frontopolar cortex as the strongest differentiator
+						between fixation and defixation episodes, with more activation during defixation. This work is in progress and will be submitted to Design Science.
 						</p>
+					</article>
 
-						<ul class="labeled-icons">
-							<li>
-								<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-								<a href="mailto:jgh5334@psu.edu">jgh5334@psu.edu</a>
-							</li>
-							<li>
-								<h3 class="icon brands fa-linkedin"><span class="label">LinkedIn</span></h3>
-								<a href="https://www.linkedin.com/in/jakeghunter/" target="_blank" rel="noopener noreferrer">
-									linkedin.com/in/jakeghunter
-								</a>
-							</li>
-							<li>
-								<h3 class="icon solid fa-graduation-cap"><span class="label">Google Scholar</span></h3>
-								<a href="https://scholar.google.com/citations?user=2hmuZMAAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
-									Google Scholar Profile
-								</a>
-							</li>
-						</ul>
-					</section>
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/Figure_1_new_drones.png" class="image fit thumb learn-more-trigger" data-project="jmd-fixation" onclick="return false;">
+							<img src="images/Figure_1_new_drones.png" alt="Design fixation analysis" />
+						</a>
+						<h3>Quantifying Design Fixation in Constrained Tasks</h3>
+						<p>
+						Developed a methodology for objectively measuring design fixation using behavioral data,
+						enabling direct comparison of design strategies in computer-based environments. Findings are published in 
+						the Journal of Mechanical Design and are available <a href="https://asmedigitalcollection.asme.org/mechanicaldesign/article/doi/10.1115/1.4071923/1233053/A-Methodology-for-Objective-Design-Fixation" target="_blank" rel="noopener noreferrer">here</a>.
+						</p>
+					</article>
 
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/drone_demo.png" class="image fit thumb learn-more-trigger" data-project="distraction-aware" onclick="return false;">
+							<img src="images/drone_demo.png" alt="Person flying a drone simulation" />
+						</a>
+						<h3>Distraction-Aware Reachability Analysis of CPHS Systems using fNIRS</h3>
+						<p>
+						Studied drone pilots under focused and distracted conditions. Used functional near-infrared spectroscopy (fNIRS) to
+						determine which regions in the prefrontal cortex are most activated during a state of distraction. My colleague then used
+						these findings with a reachability model to predict future drone states. Preliminary findings are published
+						in the <a href="https://arc.aiaa.org/doi/abs/10.2514/6.2025-2250" target="_blank" rel="noopener noreferrer">SciTech 2025 Proceedings</a> and updated work is under review in the Journal of Aerospace Information Systems.
+						</p>
+					</article>
+
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/sidewalk_mobility.jpg" class="image fit thumb learn-more-trigger" data-project="dual-mobility" onclick="return false;">
+							<img src="images/sidewalk_mobility.jpg" alt="Sidewalk mobility experiment" />
+						</a>
+						<h3>Dual Mobility Study</h3>
+						<p>
+						Explored how people develop trust when using different automated vehicles, comparing a familiar automated car to a novel automated sidewalk mobility. Using immersive simulator rides and surveys, the results showed that trust grew similarly across both systems. 
+						Findings are published in Frontiers in Psychology and are available <a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1129583/full" target="_blank" rel="noopener noreferrer">here</a>.
+						</p>
+					</article>
+
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/driving_sim.jpg" class="image fit thumb learn-more-trigger" data-project="interaction-gap" onclick="return false;">
+							<img src="images/driving_sim.jpg" alt="Driving simulation experiment" />
+						</a>
+						<h3>The Interaction Gap</h3>
+						<p>
+						Examined how trust in partially automated vehicles changes when people experience gaps between uses, mimicking real-world shared mobility. 
+						Using a driving simulator with repeated sessions, the results showed that trust gained or lost during an initial interaction partially faded after a one-week gap, indicating that periods of non-use can erode both positive and negative trust impressions of automation.
+						Findings are published in the 66th HFES Annual Meeting Proceedings and are available <a href="https://journals.sagepub.com/doi/abs/10.1177/1071181322661311" target="_blank" rel="noopener noreferrer">here</a>.
+						</p>
+					</article>
+
+				</div>
+			</section>
+
+			<!-- Patents -->
+			<section id="patents">
+				<h2>Patents</h2>
+				<div class="row">
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/bloom.jpeg" class="image fit thumb learn-more-trigger" data-project="patent-wiper" onclick="return false;">
+							<img src="images/bloom.jpeg" alt="Scope Wiper and Irrigation Cleaning System" />
+						</a>
+						<h3>Scope Wiper & Irrigation Cleaning System</h3>
+						<p>
+						Contributed to the design and development of an origami-inspired, laparoscope cleaning attachment. The patent was awarded in 2023 and is currently licensed to <a href="https://www.bloomsurgical.com/" target="_blank" rel="noopener noreferrer">Bloom Surgical</a>.
+						</p>
+					</article>
+				</div>
+			</section>
+
+			<!-- Teaching -->
+			<section id="reviews">
+				<h2>Teaching</h2>
+				<p>Toward the end of my PhD, Fall 2024 & 2025, I taught Thermodynamics I at Purdue University. I taught core mechanical engineering principles
+					including energy systems, thermodynamic cycles, and first/second law analysis to 200+ undergraduate engineering students. Below are reviews
+					from Rate My Professor:
+				</p>
+
+				<div class="review-slider">
+					<button class="review-arrow review-arrow-left" id="prevReview" aria-label="Previous review">&#10094;</button>
+					<div class="review-card">
+						<p class="review-text" id="reviewText"></p>
+						<p class="review-meta" id="reviewMeta"></p>
+					</div>
+					<button class="review-arrow review-arrow-right" id="nextReview" aria-label="Next review">&#10095;</button>
+				</div>
+
+				<div class="review-dots" id="reviewDots"></div>
+
+				<ul class="actions">
+					<li>
+						<a href="https://www.ratemyprofessors.com/professor/3028611" class="button" target="_blank" rel="noopener noreferrer">
+							View More Reviews
+						</a>
+					</li>
+				</ul>
+			</section>
+
+			<!-- Technical Projects -->
+			<section id="technical">
+				<h2>Technical Projects</h2>
+				<div class="row">
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/cgan.jpg" class="image fit thumb">
+							<img src="images/cgan.jpg" alt="Generated MNIST dataset with CGAN" />
+						</a>
+						<h3>Conditional Generative Adversarial Network for MNIST Data Generation</h3>
+						<p>
+						Created a conditional generative adversarial network (CGAN) in Python using PyTorch to generate synthetic MNIST data for my Machine Learning class. I carried out a simple
+						experiment on Instagram where I asked people to guess which images were real and which were generated, and I fooled 24% of the respondents! This was a great introduction
+						to machine learning for me. If you are interested in reading my project paper, you can <a href="files/HunterJacob_ML_Project_ECE_50024.pdf" target="_blank" rel="noopener noreferrer">here</a>.
+						</p>
+					</article>
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/IMG_4177.JPG" class="image fit thumb learn-more-trigger" data-project="yurt-floor" onclick="return false;">
+							<img src="images/IMG_4177.JPG" alt="Custom Mongolian Yurt Floor" />
+						</a>
+						<h3>Custom Insulated Floor for Mongolian Yurts</h3>
+						<p>
+						Designed a modular, insulated flooring system for Mongolian yurts. I directed a multidisciplinary team of six through two stages of the product development process and then transitioned to leading the heat transfer modeling and experimentation work. 
+						The project was for my senior capstone project at BYU and sponsored by Deseret International Charities.
+						</p>
+					</article>
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/sensor/IMG_1366.jpeg" class="image fit thumb learn-more-trigger" data-project="france-sensor" onclick="return false;">
+							<img src="images/sensor/IMG_1366.jpeg" alt="Door and Window Sensor" />
+						</a>
+						<h3>Door/Window Sensor - Indoor Air Pollution Modeling</h3>
+						<p>
+						Developed a compact sensor to be mounted on doors and windows to help model indoor air pollution. My sensor recorded date, time, temperature, and door/window 
+						state every time a door or window opened or closed. Iterated through four prototypes and improved battery life by 233%. Check out the <a href="files/International_Internship_Poster.pdf" target="_blank" rel="noopener noreferrer">poster</a> 
+						or <a href="https://www.youtube.com/watch?v=b2dodm5hTdw" target="_blank" rel="noopener noreferrer">video</a> where I discuss this work.
+						</p>
+					</article>
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/shear_moment.png" class="image fit thumb">
+							<img src="images/shear_moment.png" alt="Matlab GUI for Shear and Moment Diagrams" />
+						</a>
+						<h3>Matlab GUI for Shear and Moment Diagrams</h3>
+						<p>
+						Designed a Matlab GUI to visualize shear and moment diagrams for point and distributed loads on simply-supported beams. This was for an undergrad coding project, so if you want to hear about it from a younger me you can see the video <a href="https://www.youtube.com/watch?v=sGlbA0-T_hg" target="_blank" rel="noopener noreferrer">here</a>.
+						</p>
+					</article>
+				</div>
+			</section>
+
+			<!-- Interests -->
+			<section id="interests">
+				<h2>Interests</h2>
+				<div class="row">
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/onewheel_purdue.jpg" class="image fit thumb">
+							<img src="images/onewheel_purdue.jpg" alt="Onewheel" />
+						</a>
+						<h3>Onewheel</h3>
+						<p>
+						I enjoy riding my Onewheel and getting out of the car! I have somewhere between 2,000 - 3,000 miles on my board. I like to fix things and can change the tire (it is quite the process).
+						</p>
+					</article>
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/IMG_7153.jpg" class="image fit thumb">
+							<img src="images/IMG_7153.jpg" alt="Gameboy Advance SP Screen Replacement" />
+						</a>
+						<h3>Gameboy Advance SP Screen Replacement</h3>
+						<p>
+						I like to tinker with retro video games and have repaired or upgraded two Gameboy Advance SPs, one Nintendo Entertainment System (NES), and several gameboy cartridges. I bought a non-working Gamecube and am looking forward to fixing that next!
+						</p>
+					</article>
+				</div>
+			</section>
+
+			<!-- Contact -->
+			<section id="contact">
+				<h2>Get In Touch</h2>
+				<p>
+				I am actively seeking research and engineering roles in mechanical design, human–AI interaction, and/or human factors, with availability beginning in July 2026.
+				</p>
+				<ul class="labeled-icons">
+					<li>
+						<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+						<a href="mailto:jgh5334@psu.edu">jgh5334@psu.edu</a>
+					</li>
+					<li>
+						<h3 class="icon brands fa-linkedin"><span class="label">LinkedIn</span></h3>
+						<a href="https://www.linkedin.com/in/jakeghunter/" target="_blank" rel="noopener noreferrer">
+							linkedin.com/in/jakeghunter
+						</a>
+					</li>
+					<li>
+						<h3 class="icon solid fa-graduation-cap"><span class="label">Google Scholar</span></h3>
+						<a href="https://scholar.google.com/citations?user=2hmuZMAAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+							Google Scholar Profile
+						</a>
+					</li>
+				</ul>
+			</section>
+
+		</div><!-- end #main -->
 
 		<!-- Footer -->
-			<!-- <footer id="footer">
-				<div class="inner">
-					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer> -->
-
-			<footer id="site-footer">
-				<div class="inner">
-					<p class="copyright">
-						&copy; 2026 Jacob G. Hunter. Design adapted from 
-						<a href="https://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a>.
-					</p>
-				</div>
-			</footer>
+		<footer id="site-footer">
+			<div class="inner">
+				<p class="copyright">
+					&copy; 2026 Jacob G. Hunter. Design adapted from 
+					<a href="https://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a>.
+				</p>
+			</div>
+		</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script>
-				document.addEventListener("DOMContentLoaded", function () {
-					const reviews = [
-						{
-							text: "Excellent professor. Made the 7:30 AM class fun. He made an effort to know every student's name, and put in a lot of work to make review sessions for exams. He explained concepts very well.",
-							meta: "Thermodynamics Student Fall '25"
-						},
-						{
-							text: "Genuinely such an amazing professor! He cares so much for our success, makes an effort to remember student's names, and he makes the 7:30 am class actually go by so fast. He explains such hard concepts easily and I have surprisingly been enjoying thermo so far.",
-							meta: "Thermodynamics Student Fall '25"
-						},
-						{
-							text: "Professor Hunter was a great professor, he taught very well during lectures, engaged his students, and cared about teaching and helping everyone during class, and pretty much remembered everyone's name.",
-							meta: "Thermodynamics Student Fall '24"
-						},
-						{
-							text: "His in class review sessions were very helpful in preparing for the exams since he covered difficult topics and explained them in a new way.",
-							meta: "Thermodynamics Student Fall '24"
-						}
-					];
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
-					let currentReview = 0;
+		<script>
+		// ─── Review Slider ────────────────────────────────────────────────────────
+		document.addEventListener("DOMContentLoaded", function () {
+			const reviews = [
+				{
+					text: "Excellent professor. Made the 7:30 AM class fun. He made an effort to know every student's name, and put in a lot of work to make review sessions for exams. He explained concepts very well.",
+					meta: "Thermodynamics Student Fall '25"
+				},
+				{
+					text: "Genuinely such an amazing professor! He cares so much for our success, makes an effort to remember student's names, and he makes the 7:30 am class actually go by so fast. He explains such hard concepts easily and I have surprisingly been enjoying thermo so far.",
+					meta: "Thermodynamics Student Fall '25"
+				},
+				{
+					text: "Professor Hunter was a great professor, he taught very well during lectures, engaged his students, and cared about teaching and helping everyone during class, and pretty much remembered everyone's name.",
+					meta: "Thermodynamics Student Fall '24"
+				},
+				{
+					text: "His in class review sessions were very helpful in preparing for the exams since he covered difficult topics and explained them in a new way.",
+					meta: "Thermodynamics Student Fall '24"
+				}
+			];
 
-					const reviewText = document.getElementById("reviewText");
-					const reviewMeta = document.getElementById("reviewMeta");
-					const prevButton = document.getElementById("prevReview");
-					const nextButton = document.getElementById("nextReview");
-					const reviewDots = document.getElementById("reviewDots");
+			let currentReview = 0;
+			const reviewText = document.getElementById("reviewText");
+			const reviewMeta = document.getElementById("reviewMeta");
+			const prevButton = document.getElementById("prevReview");
+			const nextButton = document.getElementById("nextReview");
+			const reviewDots = document.getElementById("reviewDots");
 
-					function renderDots() {
-						reviewDots.innerHTML = "";
-						reviews.forEach((_, index) => {
-							const dot = document.createElement("span");
-							dot.className = "review-dot" + (index === currentReview ? " active" : "");
-							dot.setAttribute("aria-label", "Go to review " + (index + 1));
-							dot.addEventListener("click", function () {
-								currentReview = index;
-								renderReview();
-							});
-							reviewDots.appendChild(dot);
-						});
-					}
-
-					function renderReview() {
-						reviewText.textContent = '"' + reviews[currentReview].text + '"';
-						reviewMeta.textContent = reviews[currentReview].meta;
-						renderDots();
-					}
-
-					prevButton.addEventListener("click", function () {
-						currentReview = (currentReview - 1 + reviews.length) % reviews.length;
+			function renderDots() {
+				reviewDots.innerHTML = "";
+				reviews.forEach((_, index) => {
+					const dot = document.createElement("span");
+					dot.className = "review-dot" + (index === currentReview ? " active" : "");
+					dot.setAttribute("aria-label", "Go to review " + (index + 1));
+					dot.addEventListener("click", function () {
+						currentReview = index;
 						renderReview();
 					});
-
-					nextButton.addEventListener("click", function () {
-						currentReview = (currentReview + 1) % reviews.length;
-						renderReview();
-					});
-
-					renderReview();
+					reviewDots.appendChild(dot);
 				});
-			</script>			
+			}
+
+			function renderReview() {
+				reviewText.textContent = '"' + reviews[currentReview].text + '"';
+				reviewMeta.textContent = reviews[currentReview].meta;
+				renderDots();
+			}
+
+			prevButton.addEventListener("click", function () {
+				currentReview = (currentReview - 1 + reviews.length) % reviews.length;
+				renderReview();
+			});
+			nextButton.addEventListener("click", function () {
+				currentReview = (currentReview + 1) % reviews.length;
+				renderReview();
+			});
+
+			renderReview();
+		});
+
+
+		// ─── Project Modal ────────────────────────────────────────────────────────
+
+		// ── Project data store ──
+		// To add a project: add a key matching data-project="key" on the thumbnail <a>,
+		// then define title, subtitle, and steps (each with a heading, body, and optional image).
+		const projectData = {
+
+			"fnirs-fixation": {
+				title: "Correlating Brain Activation with Design Fixation",
+				subtitle: "West Lafayette, Indiana",
+				steps: [
+					{
+						heading: "Context",
+						body: "Design fixation limits creativity in designers. <br> Designers adhere too closely to existing ideas or solutions. <br> Little work has explored neural mechanisms underlying design fixation.",
+						figures: [ { src: "images/fixation/IMG_5051.jpg", caption: null},
+								   // { src: "images/fixation/brain_image.jpg", caption: null},
+								   // { src: "images/fixation/colleague.jpg", caption: null},
+						]
+					},
+					{
+						heading: "Objective",
+						body: "Identify whether periods of fixation and defixation correspond to prefrontal cortex activation measured with fNIRS.",
+						figures: [ { src: "images/fixation/platform_draft.png", caption: null},
+								   { src: "images/distraction/brain_image.jpg", caption: null},
+								   // { src: "images/fixation/colleague.jpg", caption: null},
+						]
+					},
+					{
+						heading: "Action",
+						body: "Collected data from 23 designers. <br> Mapped behavioral fixation data to brain activation. <br> fNIRS signal processing: motion artifact removal, bandpass filtering, etc. <br> Statistical modeling and analysis.",
+						figures: [ { src: "images/fixation/participant.jpg", caption: null},
+								   { src: "images/fixation/similar_to_previous.png", caption: null},
+								   // { src: "images/fixation/colleague.jpg", caption: null},
+						]
+					},
+					{
+						heading: "Result",
+						body: "Preliminary findings reveal right frontopolar cortex (rFPC) is strongest differentiator between the two states. <br> Currently working on better modeling and analysis.",
+						image: null
+					},
+				]
+			},
+
+			"jmd-fixation": {
+				title: "Quantifying Design Fixation in Constrained Tasks",
+				subtitle: "West Lafayette, Indiana",
+				steps: [
+					{
+						heading: "Context",
+						body: "Design fixation plagues engineers as they explore design spaces. <br> Their creativity is limited as they are fixated on examples or intial ideas. <br> Previous design fixation work is subjective and time-consuming.",
+						figures: [ { src: "images/fixation/updated_design_module_final.jpg", caption: null},
+								   // { src: "images/fixation/similar_to_previous.png", caption: null},
+								   // { src: "images/fixation/colleague.jpg", caption: null},
+						]
+					},
+					{
+						heading: "Objective",
+						body: "Develop a design methodology to objectively quantify fixation in constrained design tools.",
+						figures: [ { src: "images/fixation/Figure_1_new_drones.png", caption: null},
+								   // { src: "images/fixation/drone_components_v2.png", caption: null},
+								   // { src: "images/fixation/colleague.jpg", caption: null},
+						]
+					},
+					{
+						heading: "Action",
+						body: "Created methodology:<br>(i) Select a design tool<br> (ii) Determine fixation variables<br> (iii) Define similarity metrics<br> (iv) Design and conduct human user study<br> (v) Process and analyze data<br> Executed case study on drone design platform.<br> Deep analysis of data.",
+						figures: [ { src: "images/fixation/participant.jpg", caption: null},
+								   // { src: "images/fixation/drone_components_v2.png", caption: null},
+								   { src: "images/fixation/sticky_note_standing.jpg", caption: null},
+						]
+					},
+					{
+						heading: "Result",
+						body: "Generalized methodology to track fixation to example, initial or previous design.<br> Willingness to explore a design space correlates with more successful outcomes. <br> Implications for product design and designer-AI teaming.",
+						figures: [ { src: "images/fixation/ai_guide.png", caption: null},
+								   // { src: "images/fixation/updated_design_module_final.jpg", caption: null},
+								   { src: "images/fixation/boxplot_real.png", caption: null},
+								   // { src: "images/fixation/colleague.jpg", caption: null},
+						]
+					}
+					// {
+					// 	heading: "Implications & Next Steps",
+					// 	body: "These findings suggest that fNIRS could be used to build a real-time fixation detection system — one that could alert designers or AI collaborators when a user is stuck. The work is currently being prepared for submission to Design Science. Future directions include integrating this signal into an adaptive design tool that intervenes when fixation is detected.",
+					// 	image: null
+					// }
+				]
+			},
+
+			"distraction-aware": {
+				title: "Distraction-Aware Reachability Analysis of CPHS Systems using fNIRS",
+				subtitle: "West Lafayette, Indiana",
+				steps: [
+					{
+						heading: "Context",
+						body: "Human and neuroimaging expert on the team. <br> Supported my colleague in the School of Aeronautics. <br> NSF Cyber Physical Systems project.",
+						// image: null  // replace with "images/your-image.jpg" when ready
+						figures: [ { src: "images/distraction/headset.jpg", caption: null},
+								   { src: "images/distraction/brain_image.jpg", caption: null},
+								   { src: "images/distraction/colleague.jpg", caption: null},
+								   // { src: "images/sensor/sorbonne.jpg", caption: null}, 
+						]
+					},
+					{
+						heading: "Objective",
+						body: "Integrate brain-based distraction detection into CPHS safety analysis.",
+						figures: [ { src: "images/distraction/scenario_v2.png", caption: null},
+								   // { src: "images/distraction/prediction.jpg", caption: null},
+								   // { src: "images/sensor/inserm.jpg", caption: null},
+								   // { src: "images/sensor/sorbonne.jpg", caption: null}, 
+						]
+					},
+					{
+						heading: "Action",
+						body: "Developed a secondary task to distract drone pilots. <br> Ran human subjects study with wearable neuroimaging and drone simulation. <br> Signal processing: light intensity &rarr; oxygenated hemoglobin. <br> Statistical modeling to determine activated brain regions.",
+						figures: [ { src: "images/distraction/app_screen.png", caption: null},
+								   { src: "images/distraction/participant.jpg", caption: null},
+								   // { src: "images/sensor/v3.jpg", caption: null},
+								   // { src: "images/sensor/v4.jpeg", caption: null}, 
+						]
+					},
+					{
+						heading: "Result",
+						body: "Enabled real-time distraction belief estimation from fNIRS signals.",
+						figures: [ { src: "images/distraction/prediction.jpg", caption: null},
+								   // { src: "images/distraction/IMG_1238.jpg", caption: null},
+								   // { src: "images/sensor/inserm.jpg", caption: null},
+								   // { src: "images/sensor/sorbonne.jpg", caption: null}, 
+						]
+					},
+				]
+			},
+			
+			"dual-mobility": {
+				title: "Dual Mobility Study",
+				subtitle: "San Jose, California",
+				steps: [
+					{
+						heading: "Context",
+						body: "Intern at Honda Research Institute. <br> Unreal Engine VR experimental development. <br> Automated car and automated sidewalk mobility.",
+						// image: null  // replace with "images/your-image.jpg" when ready
+						figures: [ { src: "images/honda/front.JPG", caption: null},
+								   { src: "images/honda/starvrone.png", caption: null},
+								   // { src: "images/distraction/colleague.jpg", caption: null},
+								   // { src: "images/sensor/sorbonne.jpg", caption: null}, 
+						]
+					},
+					{
+						heading: "Objective",
+						body: "Determine how driver trust changes with different automated vehicles.",
+						figures: [ { src: "images/honda/car.jpeg", caption: null},
+								   { src: "images/honda/sidewalk.jpeg", caption: null},
+								   // { src: "images/sensor/inserm.jpg", caption: null},
+								   // { src: "images/sensor/sorbonne.jpg", caption: null}, 
+						]
+					},
+					{
+						heading: "Action",
+						body: "Created aggressive and defensive driving scenarios in Unreal Engine. <br> Developed experimental protocol. <br> Trained five master's students from San Jose State University. <br> Data analysis.",
+						figures: [ { src: "images/honda/stale_green_agg.png", caption: null},
+								   { src: "images/honda/week_1_rel_def_car_v_sm.png", caption: null},
+								   { src: "images/honda/sidewalk_mobility_drawing.jpg", caption: null},
+								   // { src: "images/sensor/v4.jpeg", caption: null}, 
+						]
+					},
+					{
+						heading: "Result",
+						body: "Fourty-eight person study completed. <br> Trust grows similarly across both automated systems. <br> Agressive driving actions decreased trust in the software developers.",
+						figures: [ { src: "images/honda/IMG_5915.jpg", caption: null},
+								   { src: "images/honda/IMG_5913.jpg", caption: null},
+								   // { src: "images/sensor/inserm.jpg", caption: null},
+								   // { src: "images/sensor/sorbonne.jpg", caption: null}, 
+						]
+					},
+				]
+			},
+
+			"interaction-gap": {
+				title: "The Interaction Gap",
+				subtitle: "West Lafayette, Indiana",
+				steps: [
+					{
+						heading: "Context",
+						body: "Human subjects lead. <br> SAE Level 2 Driving. <br> Sponsored by Honda Research Institute.",
+						// image: null  // replace with "images/your-image.jpg" when ready
+						figures: [ { src: "images/interaction/driving_sim_cropped.jpg", caption: null},
+								   { src: "images/interaction/participant_purdue.jpg", caption: null},
+								   // { src: "images/distraction/colleague.jpg", caption: null},
+								   // { src: "images/sensor/sorbonne.jpg", caption: null}, 
+						]
+					},
+					{
+						heading: "Objective",
+						body: "Determine how trust changes during a gap between automated vehicle use.",
+						figures: [ { src: "images/interaction/interaction_gap.png", caption: null},
+								   // { src: "images/honda/sidewalk.jpeg", caption: null},
+								   // { src: "images/sensor/inserm.jpg", caption: null},
+								   // { src: "images/sensor/sorbonne.jpg", caption: null}, 
+						]
+					},
+					{
+						heading: "Action",
+						body: "Thirty-six subject experiment. <br> Collected survey, eye-tracking, and GSR data. <br> Statistical data analysis.",
+						figures: [ { src: "images/interaction/transparency.png", caption: null},
+								   { src: "images/interaction/low_vis.png", caption: null},
+								   // { src: "images/interaction/trend.png", caption: null},
+								   // { src: "images/sensor/v4.jpeg", caption: null}, 
+						]
+					},
+					{
+						heading: "Result",
+						body: "Change in trust over gap is inversely correlated with change in trust during initial interaction.",
+						figures: [ { src: "images/interaction/poster_session.jpg", caption: null},
+								   { src: "images/interaction/trend.png", caption: null},
+								   // { src: "images/sensor/inserm.jpg", caption: null},
+								   // { src: "images/sensor/sorbonne.jpg", caption: null}, 
+						]
+					},
+				]
+			},
+
+			"patent-wiper": {
+				title: "Scope Wiper & Irrigation Cleaning System",
+				subtitle: "Provo, Utah",
+				steps: [
+					{
+						heading: "Context",
+						body: "Began as compliant mechanisms course project. <br> Became a CMR research project. <br> Colleague continuing development and seeking FDA approval.",
+						// image: null  // replace with "images/your-image.jpg" when ready
+						figures: [ { src: "images/bloom.jpeg", caption: null},
+								   // { src: "images/sensor/thinker.jpeg", caption: null},
+								   // { src: "images/sensor/inserm.jpg", caption: null},
+								   // { src: "images/sensor/sorbonne.jpg", caption: null}, 
+						]
+					},
+					{
+						heading: "Objective",
+						body: "Develop a compliant mechanism device enabling in-situ laparoscopic lens cleaning.",
+						figures: [ { src: "images/compliant/view.png", caption: null},
+								   { src: "images/compliant/PRBM-01.png", caption: null},
+								   // { src: "images/sensor/inserm.jpg", caption: null},
+								   // { src: "images/sensor/sorbonne.jpg", caption: null}, 
+						]
+					},
+					{
+						heading: "Action",
+						body: "Set design criteria. <br> Brainstormed, prototyped, and tested. <br> Design, FEA, and documentation.",
+						figures: [ { src: "images/compliant/idea.jpg", caption: null},
+								   { src: "images/compliant/twisted.png", caption: null},
+								   { src: "images/compliant/open_topview.png", caption: null},
+								   // { src: "images/sensor/v4.jpeg", caption: null}, 
+						]
+					},
+					{
+						heading: "Result",
+						body: "Prototype of a compliant, cable-actuated wiper that clears the lens using stored strain energy.",
+						figures: [ { src: "images/compliant/lap_open.png", caption: null},
+								   // { src: "images/sensor/IMG_1238.jpg", caption: null},
+								   // { src: "images/sensor/inserm.jpg", caption: null},
+								   // { src: "images/sensor/sorbonne.jpg", caption: null}, 
+						]
+					},
+				]
+			},
+
+			"yurt-floor": {
+				title: "Custom Insulated Floor for Mongolian Yurts",
+				subtitle: "Provo, Utah",
+				steps: [
+					{
+						heading: "Context",
+						body: "BYU Capstone senior design project. <br> Team lead of six engineering students (Fall semester). <br> Sponsored by Deseret International Charities.",
+						// image: null  // replace with "images/your-image.jpg" when ready
+						figures: [ { src: "images/capstone/team.jpg", caption: null},
+								   // { src: "images/capstone/.jpeg", caption: null},
+								   // { src: "images/sensor/inserm.jpg", caption: null},
+								   // { src: "images/sensor/sorbonne.jpg", caption: null}, 
+						]
+					},
+					{
+						heading: "Objective",
+						body: "Design, prototype, and test a manufacturing-ready insulated modular flooring system within a $1500 material budget.",
+						figures: [ { src: "images/capstone/requirements.png", caption: null},
+								   // { src: "images/capstone/.jpg", caption: null},
+								   // { src: "images/sensor/inserm.jpg", caption: null},
+								   // { src: "images/sensor/sorbonne.jpg", caption: null}, 
+						]
+					},
+					{
+						heading: "Action",
+						body: "Determined market requirements and performance measures. <br> Led concept development activities. <br> Built prototypes. <br> Led heat transfer efforts and testing.",
+						figures: [ { src: "images/capstone/concept_dev.JPG", caption: null},
+								   { src: "images/capstone/building.JPG", caption: null},
+								   { src: "images/capstone/IMG_3971.jpg", caption: null},
+								   // { src: "images/capstone/v4.jpeg", caption: null}, 
+						]
+					},
+					{
+						heading: "Result",
+						body: "Produced a mass-manufacturable, modular floor design. <br> Durable, strong, and portable floor panels. <br> Improved the floor's thermal resistance by over 2x.",
+						figures: [ // { src: "images/capstone/floor.png", caption: null},
+								   { src: "images/capstone/furniture.jpg", caption: null},
+								   { src: "images/capstone/exploded.jpg", caption: null},
+								   // { src: "images/sensor/sorbonne.jpg", caption: null}, 
+						]
+					},
+				]
+			},
+
+			"france-sensor": {
+				title: "Door/Window Sensor - Indoor Air Pollution Modeling",
+				subtitle: "Paris, France",
+				steps: [
+					{
+						heading: "Context",
+						body: "Interned in the Pierre Louis Institute of Epidemiology and Public Health. <br> Partnership between INSERM and the Sorbonne University of Medicine. <br> Very few resources available.",
+						// image: null  // replace with "images/your-image.jpg" when ready
+						figures: [ { src: "images/sensor/paris.jpg", caption: null},
+								   { src: "images/sensor/thinker.jpeg", caption: null},
+								   // { src: "images/sensor/inserm.jpg", caption: null},
+								   // { src: "images/sensor/sorbonne.jpg", caption: null}, 
+						]
+					},
+					{
+						heading: "Objective",
+						body: "Develop a door/window sensor for monitoring home airflow.",
+						figures: [ { src: "images/sensor/IMG_0049.jpg", caption: null},
+								   { src: "images/sensor/IMG_0052.jpg", caption: null},
+								   // { src: "images/sensor/inserm.jpg", caption: null},
+								   // { src: "images/sensor/sorbonne.jpg", caption: null}, 
+						]
+					},
+					{
+						heading: "Action",
+						body: "Sourced materials within Paris and online. <br> Implemented an interrupt and deep sleep mode to improve battery life by 233%. <br> Built four increasingly effective prototypes. <br> Collected pilot data in co-worker's apartment.",
+						figures: [ { src: "images/sensor/v1.jpg", caption: null},
+								   { src: "images/sensor/IMG_1191.jpg", caption: null},
+								   { src: "images/sensor/v3.jpg", caption: null},
+								   { src: "images/sensor/v4.jpeg", caption: null}, 
+						]
+					},
+					{
+						heading: "Result",
+						body: "Functional prototypes record date, time, temperature, and door/window state. <br> Everytime a door/window opens or closes.",
+						figures: [ { src: "images/sensor/v4_2.jpeg", caption: null},
+								   { src: "images/sensor/IMG_1238.jpg", caption: null},
+								   // { src: "images/sensor/inserm.jpg", caption: null},
+								   // { src: "images/sensor/sorbonne.jpg", caption: null}, 
+						]
+					},
+				]
+			}
+
+			// ── Add more projects below following the same structure ──
+			// "project-key": {
+			//     title: "...",
+			//     subtitle: "...",
+			//     steps: [ { heading, body, image }, ... ]
+			// }
+		};
+
+		// ── Modal logic ──
+		(function () {
+			const overlay  = document.getElementById('project-modal');
+			const closeBtn = document.getElementById('pmodal-close');
+			const titleEl  = document.getElementById('pmodal-title');
+			const subtitleEl = document.getElementById('pmodal-subtitle');
+			const bodyEl   = document.getElementById('pmodal-body');
+
+			function openModal(projectKey) {
+				const data = projectData[projectKey];
+				if (!data) return;
+
+				titleEl.textContent    = data.title;
+				subtitleEl.textContent = data.subtitle;
+
+				// Build timeline steps
+				bodyEl.innerHTML = data.steps.map((step, i) => `
+					<div class="pmodal-step">
+						<div class="pmodal-step-marker">
+							<div class="pmodal-step-badge">${i + 1}</div>
+							${i < data.steps.length - 1 ? '<div class="pmodal-step-line"></div>' : ''}
+						</div>
+						<div class="pmodal-step-content">
+							<h3 class="pmodal-step-heading">${step.heading}</h3>
+							<p class="pmodal-step-body">${step.body}</p>
+							${step.figures && step.figures.length > 0 ? `
+								<div class="pmodal-figures fig-${Math.min(step.figures.length, 4)}">
+									${step.figures.slice(0, 4).map(fig => `
+										<figure class="pmodal-figure">
+											<img src="${fig.src}" alt="${fig.caption || ''}" />
+											${fig.caption ? `<figcaption>${fig.caption}</figcaption>` : ''}
+										</figure>
+									`).join('')}
+								</div>
+							` : ''}
+						</div>
+					</div>
+				`).join('');
+
+				overlay.classList.add('is-active');
+				document.body.classList.add('pmodal-open');
+
+				// Reset scroll to top
+				overlay.querySelector('.pmodal-container').scrollTop = 0;
+			}
+
+			function closeModal() {
+				overlay.classList.remove('is-active');
+				document.body.classList.remove('pmodal-open');
+			}
+
+			// Trigger on learn-more thumbnails
+			document.querySelectorAll('.learn-more-trigger').forEach(function (el) {
+				el.addEventListener('click', function (e) {
+					e.preventDefault();
+					openModal(this.dataset.project);
+				});
+			});
+
+			// Close button
+			closeBtn.addEventListener('click', closeModal);
+
+			// Click outside container to close
+			overlay.addEventListener('click', function (e) {
+				if (e.target === overlay) closeModal();
+			});
+
+			// Escape key
+			document.addEventListener('keydown', function (e) {
+				if (e.key === 'Escape') closeModal();
+			});
+		})();
+		</script>
 
 	</body>
 </html>
