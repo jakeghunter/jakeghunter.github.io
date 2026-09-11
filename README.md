@@ -4,7 +4,7 @@ Personal website and research portfolio
 This repository contains the source code for my personal website.
 
 ## About
-I am a research scholar at Penn State where I study how humans and AI collaborate in engineering design.
+I am a postdoctoral research fellow at the Georgia Institute of Technology where I study how humans and AI collaborate in engineering design.
 
 ## Structure
 
